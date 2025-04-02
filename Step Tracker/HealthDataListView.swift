@@ -10,7 +10,6 @@ import SwiftUI
 struct HealthDataListView: View {
     
     @State private var isShowingAddData = false
-    
     @State private var addDataDate: Date = .now
     @State private var valueToAdd: String = ""
     
@@ -39,7 +38,6 @@ struct HealthDataListView: View {
         NavigationStack {
             Form {
                 DatePicker("Date", selection: $addDataDate, displayedComponents: .date)
-                
                 HStack {
                     Text(metric.title)
                     Spacer()
